@@ -14,7 +14,7 @@ Attributes
 Windows Only Attribute
 
 ```ruby
-default['filezilla']['version'] = '3.12.0.2'
+default['filezilla']['version'] = '3.14.0'
 ```
 
 

@@ -1,6 +1,10 @@
 filezilla Cookbook CHANGELOG
 ========================
 
+v1.3.2 (2015-09-25)
+--------------------
+- Bump Windows version to the latest release '3.14'
+
 v1.3.2 (2015-07-10)
 --------------------
 - Now supports installs for Ubuntu and RHEL/CentOS
