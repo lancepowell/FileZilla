@@ -1,6 +1,6 @@
 'filezilla' Cookbook
 ====================
-Installs the latest version of the FileZilla Client
+Installs the latest version of the FileZilla Client and/or Server
 
 [![GitHub version](https://badge.fury.io/gh/lancepowell%2FFileZilla.svg)](http://badge.fury.io/gh/lancepowell%2FFileZilla)
 [![Code Climate](https://codeclimate.com/github/lancepowell/FileZilla/badges/gpa.svg)](https://codeclimate.com/github/lancepowell/FileZilla)
@@ -11,10 +11,12 @@ Attributes
  - Windows needs a version specified, see default attributes file for specifics on how this is used.
  - Linux Distributions contain no attributes, they pull the version using the package resource
 
-Windows Only Attribute
+Windows Only Attributes
 
 ```ruby
-default['filezilla']['version'] = '3.14.0'
+default['filezilla']['client']['version'] = '3.14.0'
+default['filezilla']['server']['version'] = '0.9.53'
+default['filezilla']['server']['filename_version'] = '0_9_53'
 ```
 
 
@@ -43,6 +45,18 @@ Include the default recipe in your role:
 {
 	"run_list": [
 	"recipe[filezilla::default]"
+	]
+}
+```
+
+#### filezilla::server
+
+Include the server recipe in your role to install the FileZilla server (Windows only):
+
+```json
+{
+	"run_list": [
+	"recipe[filezilla::server]"
 	]
 }
 ```

@@ -1,9 +1,11 @@
 require 'spec_helper'
 
-describe 'FileZilla::default' do
-  # Serverspec examples can be found at
-  # http://serverspec.org/resource_types.html
-  it 'does something' do
-    skip 'Replace this with meaningful tests'
+if os[:family] == 'windows'
+  describe package('FileZilla Client 3.14.0') do
+    it { should be_installed }
+  end
+else
+  describe package('filezilla') do
+    it { should be_installed }
   end
 end
