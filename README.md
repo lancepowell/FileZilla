@@ -14,9 +14,9 @@ Attributes
 Windows Only Attributes
 
 ```ruby
-default['filezilla']['client']['version'] = '3.14.0'
-default['filezilla']['server']['version'] = '0.9.53'
-default['filezilla']['server']['filename_version'] = '0_9_53'
+default['filezilla']['client']['version'] = '3.14.1'
+default['filezilla']['server']['version'] = '0.9.54'
+default['filezilla']['server']['filename_version'] = '0_9_54'
 ```
 
 

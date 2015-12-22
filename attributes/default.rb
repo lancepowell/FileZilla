@@ -1,8 +1,8 @@
 # The version is the only attribute that needs to be changed when a newer version is released.
 if platform_family?('windows')
-  default['filezilla']['client']['version'] = '3.14.0'
-  default['filezilla']['server']['version'] = '0.9.53'
-  default['filezilla']['server']['filename_version'] = '0_9_53' # The FileZilla server filename uses underscores instead of periods
+  default['filezilla']['client']['version'] = '3.14.1'
+  default['filezilla']['server']['version'] = '0.9.54'
+  default['filezilla']['server']['filename_version'] = '0_9_54' # The FileZilla server filename uses underscores instead of periods
 
 
   client_version = default['filezilla']['client']['version']
